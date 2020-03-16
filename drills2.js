@@ -93,4 +93,22 @@ function monthDays(month, leapYear) {
   }
 }
 
-console.log(monthDays('monkey'));
+console.log(monthDays('January'));
+
+const randomNo = Math.floor(Math.random() * 3) + 1;
+
+function rps(num){
+  let ourNum = 1
+  if (ourNum && num === 3) {
+    return "Rock beats scissors. Player wins."
+  } else if (ourNum === 1 && num === 2) {
+    return "Paper beats rock. Computer wins."
+  } else if (ourNum === 1 && num === 1) {
+    return "Rock hits rock. Nothing happens."
+  } else {
+    throw new Error('No snakes!')
+  }
+
+}
+console.log(rps(randomNo));
+

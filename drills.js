@@ -1,9 +1,12 @@
 /* eslint-disable strict */
 function createGreeting(name, age) {
-    if (!name || !age) {
-        throw new Error("Arguments not valid")
-    }
   const yearOfBirth = 2020 - age;
+  if (!name || !age) {
+    throw new Error("Arguments not valid")
+  }
+  if (typeof(name) !== "string" || typeof(age) !== "number") {
+    throw new TypeError();
+  }
   return `Hello my name is ${name} and I'm ${age} and I was born in ${yearOfBirth}.`;
 }
 
@@ -20,5 +23,4 @@ try {
   
 }
 
-console.log(createGreeting("Tyler", 28))
-console.log(greeting);
+console.log(createGreeting("Tyler", 23))

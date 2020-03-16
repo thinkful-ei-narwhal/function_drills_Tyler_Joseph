@@ -1,0 +1,1 @@
+console.log("Hello my name is Joseph and I'm 21");

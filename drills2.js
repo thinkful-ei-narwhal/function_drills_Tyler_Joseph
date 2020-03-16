@@ -46,3 +46,51 @@ function decode(word){
 };
 
 console.log(decode("craft block argon meter bells brown croon droop"));
+
+function monthDays(month, leapYear) {
+  switch (month) {
+    case 'January':
+      return 'January has 31 days';
+      break;
+    case 'February':
+      if (leapYear) {
+        return 'February has 29 days this year';
+      }
+      return 'February has 28 days this year';
+      break;
+    case 'March':
+      return 'March has 31 days this year';
+      break;
+    case 'April':
+      return 'April has 30 days this year';
+      break;
+    case 'May':
+      return 'May has 31 days this year';
+      break;
+    case 'June':
+      return 'June has 30 days this year';
+      break;
+    case 'July':
+      return 'July has 31 days this year';
+      break;
+    case 'August':
+      return 'August has 30 days this year';
+      break;
+    case 'September':
+      return 'September has 31 days this year';
+      break;
+    case 'October':
+      return 'October has 30 days this year';
+      break;
+    case 'November':
+      return 'November has 31 days this year';
+      break;
+    case 'December':
+      return 'December has 30 days this year';
+      break;
+    default:
+      throw new Error('Please return a valid month');
+  }
+}
+
+console.log(monthDays('monkey'));

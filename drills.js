@@ -1,6 +1,6 @@
 /* eslint-disable strict */
-function createGreeting() {
-    return "Hello my name is Joseph and I'm 21";
+function createGreeting(name, age) {
+    return `Hello my name is ${name} and I'm ${age}.`;
 }
 
 let greeting = createGreeting();

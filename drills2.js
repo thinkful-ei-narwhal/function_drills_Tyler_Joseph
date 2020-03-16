@@ -41,8 +41,8 @@ function decode(word){
     }   
   }
 
-  return passPhrase
+  return passPhrase;
     
 };
 
-console.log(decode("craft block argon meter bells brown croon droop"))
+console.log(decode("craft block argon meter bells brown croon droop"));
